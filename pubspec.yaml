@@ -23,6 +23,7 @@ dependencies:
   isar: *isar_version
   isar_flutter_libs: *isar_version # contains Isar Core
   path_provider: ^2.1.4
+  go_router: ^14.6.0
 
 dev_dependencies:
   analyzer: ^5.13.0
