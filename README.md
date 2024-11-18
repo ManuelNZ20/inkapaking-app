@@ -17,7 +17,9 @@ _InkaPacking App_ es una aplicación móvil desarrollada en **Flutter** que ofre
 
 - **Flutter**: Framework de desarrollo móvil.
 - **Dart**: Lenguaje de programación utilizado en Flutter.
-- **[Herramientas adicionales]**: Lista herramientas, librerías o APIs utilizadas.
+- **Herramientas adicionales**: Lista herramientas, librerías o APIs utilizadas.
+  - **Gestión de FVM**
+    - Flutter Sidekick
 
 ---
 
@@ -38,7 +40,7 @@ Sigue estos pasos para clonar e instalar el proyecto:
 
 1. Clona el repositorio:
    ```bash
-   git clone https://github.com/tuusuario/inkapacking_app.git
+   git clone https://github.com/ManuelNZ20/inkapaking-app.git
    ```
 2. Navega al directorio del proyecto:
    ```bash
@@ -52,6 +54,16 @@ Sigue estos pasos para clonar e instalar el proyecto:
    ```bash
    flutter run
    ```
+
+## Uso de FVM (Flutter Version Management)
+
+Para gestionar versiones de Flutter con FVM, utiliza:
+
+```bash
+fvm install 3.19.6
+fvm use 3.19.6
+fvm flutter run
+```
 
 ---
 
@@ -109,14 +121,14 @@ Si deseas contribuir a este proyecto:
 
 ## **Licencia**
 
-Este proyecto está licenciado bajo [Licencia]. Consulta el archivo `LICENSE` para más información.
+Este proyecto está licenciado bajo [Licencia]. Consulta el archivo `LICENSE` para más información. Este proyecto está licenciado bajo los términos de la licencia MIT.
 
 ---
 
 ## **Contacto**
 
-**Autor:** [Tu nombre o equipo]  
-**Correo electrónico:** [tuemail@example.com]  
-**LinkedIn:** [Tu perfil]
+**Autor:** NavarroDev  
+**Correo electrónico:** [manuel08n@gmail.com]  
+**LinkedIn:** [🦁[Navarro Zeta](https://www.linkedin.com/in/manuel-walter-navarro-zeta/)]
 
 ---
