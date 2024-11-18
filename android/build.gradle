@@ -1,9 +1,23 @@
+buildscript {
+    ext.kotlin_version = '1.6.0' // Define la versión de Kotlin
+    repositories {
+        google()
+        mavenCentral()
+    }
+    dependencies {
+        // classpath 'com.android.tools.build:gradle:8.1.0' // Versión del Android Gradle Plugin
+        classpath 'com.android.tools.build:gradle:7.4.2' // En lugar de 8.1.0 si hay problemas
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+    }
+}
+
 allprojects {
     repositories {
         google()
         mavenCentral()
     }
 }
+
 
 rootProject.buildDir = "../build"
 subprojects {

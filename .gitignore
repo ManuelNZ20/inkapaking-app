@@ -41,3 +41,18 @@ app.*.map.json
 /android/app/debug
 /android/app/profile
 /android/app/release
+
+# FVM Version Cache
+.fvm/
+
+# Files Examples
+# File Core
+lib/core/enums/status.enum.dart
+lib/core/enums
+# File Domain Example
+lib/domain/entities/email.dart
+lib/domain/entities/email.g.dart
+# File Infrastructure
+lib/infrastructure/datasources/isar_datasource.dart
+# File Presentation
+lib/presentation/riverpod/email.riverpod.dart
