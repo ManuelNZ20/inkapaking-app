@@ -56,3 +56,7 @@ lib/domain/entities/email.g.dart
 lib/infrastructure/datasources/isar_datasource.dart
 # File Presentation
 lib/presentation/riverpod/email.riverpod.dart
+
+# Environment
+.env.dev
+.env.prod
