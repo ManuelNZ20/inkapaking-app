@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import '../../core/constants/colors_constants.dart';
 import 'styles.dart';
 
 class AppTheme {
@@ -8,6 +9,10 @@ class AppTheme {
       textTheme: textTheme,
       appBarTheme: appBarTheme,
       buttonTheme: buttonTheme,
+      colorSchemeSeed: mainColors,
+      inputDecorationTheme: inputDecorationTheme,
+      outlinedButtonTheme: outlinedButtonTheme,
+      filledButtonTheme: filledButtonTheme,
     );
   }
 }

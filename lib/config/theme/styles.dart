@@ -1,6 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
+import '../../core/constants/colors_constants.dart';
+
+// AppBar
+const appBarTheme = AppBarTheme(
+  centerTitle: true,
+  iconTheme: IconThemeData(),
+);
+
+// TextTheme
 final textTheme = TextTheme(
   titleLarge: GoogleFonts.nunito(),
   titleMedium: GoogleFonts.nunito(),
@@ -9,28 +18,60 @@ final textTheme = TextTheme(
   bodyMedium: GoogleFonts.nunito(),
   bodySmall: GoogleFonts.nunitoSans(),
 );
-const filledButtonStyle = FilledButtonThemeData(
-  style: ButtonStyle(),
+
+// InputDecoration
+final inputDecorationTheme = InputDecorationTheme(
+  border: OutlineInputBorder(
+    borderSide: const BorderSide(),
+    borderRadius: BorderRadius.circular(6),
+  ),
+  enabledBorder: OutlineInputBorder(
+    borderSide: const BorderSide(),
+    borderRadius: BorderRadius.circular(6),
+  ),
+  focusedBorder: OutlineInputBorder(
+    borderSide: const BorderSide(),
+    borderRadius: BorderRadius.circular(6),
+  ),
+  errorBorder: OutlineInputBorder(
+    borderSide: const BorderSide(),
+    borderRadius: BorderRadius.circular(6),
+  ),
+  focusedErrorBorder: OutlineInputBorder(
+    borderSide: const BorderSide(),
+    borderRadius: BorderRadius.circular(6),
+  ),
+  isDense: true,
 );
-const appBarTheme = AppBarTheme(
-  centerTitle: true,
-  iconTheme: IconThemeData(),
+
+// OutlinedButton
+final outlinedButtonTheme = OutlinedButtonThemeData(
+  style: ButtonStyle(
+      foregroundColor: const MaterialStatePropertyAll(
+        mainColors,
+      ),
+      shape: MaterialStatePropertyAll(
+        RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(6),
+        ),
+      )),
 );
+
+// FilledButton
+final filledButtonTheme = FilledButtonThemeData(
+  style: ButtonStyle(
+    backgroundColor: const MaterialStatePropertyAll(
+      mainColors,
+    ),
+    shape: MaterialStatePropertyAll(
+      RoundedRectangleBorder(
+        borderRadius: BorderRadius.circular(6),
+      ),
+    ),
+  ),
+);
+// ButtonTheme
 const buttonTheme = ButtonThemeData();
 
-final listShadowCard = <BoxShadow>[
-  const BoxShadow(
-    color: Color(0x26000000),
-    blurRadius: 3,
-    offset: Offset(0, 1),
-    spreadRadius: 1,
-  ),
-  const BoxShadow(
-    color: Color(0x4C000000),
-    blurRadius: 2,
-    offset: Offset(0, 1),
-    spreadRadius: 0,
-  )
-];
-
+// LabelStyle
 final labelStyle = GoogleFonts.nunito();

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../config/config.dart';
+import '../core/core.dart';
 
 class MyApp extends ConsumerWidget {
   const MyApp({super.key});
@@ -10,7 +11,7 @@ class MyApp extends ConsumerWidget {
     final appRouter = ref.watch(appRouterProvider);
     return MaterialApp.router(
       debugShowCheckedModeBanner: false,
-      title: 'Inkapaking App',
+      title: AppContants.appName,
       routerConfig: appRouter,
       theme: AppTheme().theme(),
     );
