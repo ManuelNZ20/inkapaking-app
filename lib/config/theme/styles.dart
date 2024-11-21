@@ -19,28 +19,17 @@ final textTheme = TextTheme(
   bodySmall: GoogleFonts.nunitoSans(),
 );
 
+final outlineInputBorder = OutlineInputBorder(
+  borderSide: const BorderSide(),
+  borderRadius: BorderRadius.circular(6),
+);
 // InputDecoration
 final inputDecorationTheme = InputDecorationTheme(
-  border: OutlineInputBorder(
-    borderSide: const BorderSide(),
-    borderRadius: BorderRadius.circular(6),
-  ),
-  enabledBorder: OutlineInputBorder(
-    borderSide: const BorderSide(),
-    borderRadius: BorderRadius.circular(6),
-  ),
-  focusedBorder: OutlineInputBorder(
-    borderSide: const BorderSide(),
-    borderRadius: BorderRadius.circular(6),
-  ),
-  errorBorder: OutlineInputBorder(
-    borderSide: const BorderSide(),
-    borderRadius: BorderRadius.circular(6),
-  ),
-  focusedErrorBorder: OutlineInputBorder(
-    borderSide: const BorderSide(),
-    borderRadius: BorderRadius.circular(6),
-  ),
+  border: outlineInputBorder,
+  enabledBorder: outlineInputBorder,
+  focusedBorder: outlineInputBorder,
+  errorBorder: outlineInputBorder, //TODO: review, changed
+  focusedErrorBorder: outlineInputBorder, //TODO: review, changed
   isDense: true,
 );
 
@@ -62,6 +51,9 @@ final filledButtonTheme = FilledButtonThemeData(
   style: ButtonStyle(
     backgroundColor: const MaterialStatePropertyAll(
       mainColors,
+    ),
+    textStyle: MaterialStatePropertyAll(
+      GoogleFonts.nunito(),
     ),
     shape: MaterialStatePropertyAll(
       RoundedRectangleBorder(
