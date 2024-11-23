@@ -13,6 +13,44 @@ _InkaPacking App_ es una aplicación móvil desarrollada en **Flutter** que ofre
 
 ---
 
+## **Técnicas de Programación**
+
+La técnica en programación en la que se crean ramas separadas para cada función o capa de desarrollo se conoce comúnmente como **"Branch per Feature"** (Rama por Funcionalidad) o **"Feature Branching"**.
+
+### Descripción de **Branch per Feature**:
+
+Este enfoque implica que cada nueva funcionalidad o característica se desarrolla en su propia rama. Esto permite que los desarrolladores trabajen de manera aislada en características o cambios específicos sin interferir con el trabajo de otros en la rama principal (generalmente `main` o `develop`).
+
+### Beneficios de **Branch per Feature**:
+
+1. **Aislamiento de tareas:** Cada funcionalidad se desarrolla en su propia rama, lo que ayuda a evitar conflictos entre distintas partes del proyecto.
+2. **Mejor control de versiones:** Facilita la integración de nuevas funcionalidades en la rama principal solo cuando estas estén listas y probadas.
+3. **Colaboración más eficiente:** Los equipos pueden trabajar en diferentes características de forma paralela sin bloquear el progreso de otros desarrolladores.
+4. **Pruebas y revisión más específicas:** Las revisiones de código y las pruebas de integración se pueden realizar por cada funcionalidad de forma más aislada.
+
+### Flujo de trabajo típico con **Branch per Feature**:
+
+1. Crear una nueva rama a partir de la rama principal (`main` o `develop`) para una nueva característica:
+
+   ```bash
+   git checkout -b feature/nueva-funcionalidad
+   ```
+
+2. Desarrollar y hacer commits dentro de esa rama de la funcionalidad o capa.
+
+3. Cuando la funcionalidad está completa y probada, hacer un **pull request (PR)** o **merge** de la rama de la funcionalidad a la rama principal.
+
+4. Resolver cualquier conflicto si es necesario y luego integrar la funcionalidad.
+
+### Variación: **Branch per Layer** (Rama por Capa)
+
+En algunos proyectos, especialmente en aquellos con arquitecturas complejas, las ramas pueden crearse no solo por características, sino también por capas de desarrollo (por ejemplo, una capa de presentación, una capa de lógica de negocio, una capa de base de datos). Esto es útil si las diferentes capas se desarrollan y prueban independientemente.
+
+### Comparativa con otros enfoques de ramas:
+
+- **Master Branching**: Desarrollar directamente sobre la rama `master` o `main`, lo cual puede ser riesgoso si varios desarrolladores están trabajando a la vez.
+- **Git Flow**: Es una estrategia más estructurada que define ramas específicas para la producción (`main`), desarrollo (`develop`), y ramas adicionales para características, correcciones y lanzamientos.
+
 ## **Tecnologías utilizadas**
 
 - **Flutter**: Framework de desarrollo móvil.
